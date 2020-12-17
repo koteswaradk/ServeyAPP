@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#FFA07A" >
+     <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/heading"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+      <TextView
+        android:id="@+id/t_q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/q4"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_q4"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/rb_liqor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:checked="false"
+            android:text="Liquor" />
+
+        <RadioButton
+            android:id="@+id/rb_tobacco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tobacco" />
+
+        <RadioButton
+            android:id="@+id/rb_perfume"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Perfumery" />
+         <RadioButton
+            android:id="@+id/rb_chocolates"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Chocolates" />
+       
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_liquor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignTop="@+id/radio_group_q4"
+        android:layout_toRightOf="@+id/t_q4"
+        android:ems="10"
+        android:hint="Please Specify" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_tobacco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_liquor"
+        android:layout_toRightOf="@+id/t_q4"
+        
+        android:ems="10"
+        android:hint="Please Specify" />
+
+    <EditText
+        android:id="@+id/et_chocolates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_perfume"
+        android:layout_below="@+id/et_perfume"
+        android:layout_marginTop="05dp"
+        android:ems="10"
+        android:hint="Please Specify" />
+
+    <EditText
+        android:id="@+id/et_perfume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_tobacco"
+        android:layout_marginTop="05dp"
+        android:layout_toRightOf="@+id/t_q4"
+        android:ems="10"
+        android:hint="Please Specify" />
+     <TextView
+        android:id="@+id/t_q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/q5"
+        android:layout_below="@+id/radio_group_q4"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_q5"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/rb_toiletries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:checked="false"
+            android:text="Toiletries" />
+
+        <RadioButton
+            android:id="@+id/rb_babyproducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Baby Products" />
+
+        <RadioButton
+            android:id="@+id/rb_perfume_wellness_pro"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Pharmacy &amp; Wellness Products" />
+         <RadioButton
+            android:id="@+id/rb_household"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="House Hold items (Air fresh, washing, Dish wash)" />
+         <RadioButton
+            android:id="@+id/rb_food"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Food (olive oils, Gourmet canned products, Milk Powder, Tin Juices)" />
+       
+    </RadioGroup>
+    <TextView
+        android:id="@+id/t_q6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/radio_group_q5"
+        android:text="@string/q6"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_q6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_q6"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/rb_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Quality  as compared to Downtown" />
+
+        <RadioButton
+            android:id="@+id/rb_no"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Price as compared to Downtown" />
+
+        
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/b_read_third_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radio_group_q6"
+        android:layout_marginLeft="41dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/et_chocolates"
+       android:background="@drawable/checkmark"  />
+
+</RelativeLayout>

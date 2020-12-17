@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA07A"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/heading"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/t_q7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/q7"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_q7"
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/t_q7"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:hint="How would you rate your experience "
+        android:inputType="textCapSentences" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_q7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_q7"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/rb_product_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:text="Product Range" />
+
+        <RadioButton
+            android:id="@+id/rb_offerpromotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Offer &amp; promotion" />
+
+        <RadioButton
+            android:id="@+id/rb_storage_ambience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Store ambience" />
+
+        <RadioButton
+            android:id="@+id/rb_customer_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Customer Service" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/t_q8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group_q7"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/q8"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_q8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_q8"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/rb_immigration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:text="Immigration" />
+
+        <RadioButton
+            android:id="@+id/rb_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Custom" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/submit_survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group_q8"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/radio_group_q7"
+        android:background="@drawable/submit_background" />
+
+    <RatingBar
+        android:id="@+id/rating_q8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit_survey"
+        android:layout_alignLeft="@+id/submit_survey" />
+
+</RelativeLayout>

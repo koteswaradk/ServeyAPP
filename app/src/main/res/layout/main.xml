@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.koteswara.serveyapp.VerticalViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+    <!--
+         <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView" />
+    -->
+
+    <ImageButton
+        android:id="@+id/preveous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="228dp"
+        android:background="@drawable/up_background"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/preveous"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/preveous"
+        android:background="@drawable/down_backgrond"
+        android:visibility="visible" />
+
+</RelativeLayout>

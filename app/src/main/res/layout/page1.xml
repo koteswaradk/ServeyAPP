@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFA07A" >
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:text="@string/heading" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         android:textSize="18dp"
+        android:layout_below="@+id/heading1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:text="@string/dutyfreestore" />
+
+    <TextView
+        android:id="@+id/heading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/heading2"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:text="@string/subheading" />
+
+    <TextView
+        android:id="@+id/heading4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/heading3"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_marginTop="130dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/descritpion" />
+
+    <TextView
+        android:id="@+id/heading5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/heading4"
+         android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="________________________________________________________________________________________" />
+    
+    <TextView
+        android:id="@+id/text_nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/heading5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        
+        android:text="@string/nationality" />
+
+    <EditText
+        android:id="@+id/et_natinality"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading5"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/text_nationality"
+        android:hint="nationality" />
+     <RadioGroup
+    android:id="@+id/radio_location"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/heading5"
+     android:layout_toRightOf="@+id/text_location"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+   
+   
+     >
+
+    <RadioButton
+        android:id="@+id/rb_arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Arrival" />
+
+    <RadioButton
+        android:id="@+id/rb_departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure" />
+
+
+</RadioGroup>
+<TextView
+        android:id="@+id/text_airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nationality"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:text="@string/airline" />
+    <EditText
+        android:id="@+id/et_airline"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+       android:layout_below="@+id/text_nationality"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/text_airline"
+        android:hint="AirLine" />
+    <RadioGroup
+    android:id="@+id/radio_agegroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="02dp"
+    android:layout_below="@+id/text_agegorup"
+   
+     >
+
+    <RadioButton
+        android:id="@+id/rb_age_25_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="25-35" />
+
+    <RadioButton
+        android:id="@+id/rb_age_36_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="36-45" />
+
+    <RadioButton
+        android:id="@+id/rb_age_46_54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46-54" />
+    <RadioButton
+        android:id="@+id/rb_age_above_55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="above 55" />
+</RadioGroup>
+
+
+<ImageButton
+    android:id="@+id/b_read_first_page"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_alignBottom="@+id/radio_agegroup"
+    android:layout_alignRight="@+id/et_arivingfrom"
+    android:background="@drawable/checkmark"/>
+
+  <TextView
+      android:id="@+id/text_profession"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/et_airline"
+      android:layout_alignBottom="@+id/et_airline"
+      android:layout_alignLeft="@+id/text_location"
+      android:text="@string/profession"
+      android:textColor="@color/black" />
+
+  <RadioGroup
+      android:id="@+id/radio_profession"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/radio_location"
+      android:layout_alignTop="@+id/et_airline" >
+
+      <RadioButton
+          android:id="@+id/rb_Business"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Business" />
+
+      <RadioButton
+          android:id="@+id/rb_Employeed"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Employeed" />
+  </RadioGroup>
+
+  <TextView
+      android:id="@+id/text_location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/et_airline"
+      android:layout_alignRight="@+id/heading1"
+      android:text="@string/location"
+      android:textColor="@color/black" />
+
+  <RadioGroup
+      android:id="@+id/radio_gender"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/radio_profession"
+      android:layout_alignTop="@+id/text_arivingfrom" >
+
+      <RadioButton
+          android:id="@+id/rb_male"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Male" />
+
+      <RadioButton
+          android:id="@+id/rb_female"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Female" />
+  </RadioGroup>
+
+  <TextView
+      android:id="@+id/text_agegorup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/text_airline"
+      android:layout_below="@+id/radio_gender"
+      android:layout_marginTop="20dp"
+      android:text="Age Group :"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:id="@+id/text_gender"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/text_profession"
+      android:layout_alignTop="@+id/radio_gender"
+      android:text="@string/gender"
+      android:textColor="@color/black" />
+
+  <EditText
+      android:id="@+id/et_arivingfrom"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/text_gender"
+      android:layout_alignBottom="@+id/text_gender"
+      android:layout_toLeftOf="@+id/text_profession"
+      android:layout_toRightOf="@+id/text_agegorup"
+      android:ems="10"
+      android:hint="Ariving From"
+      android:textColor="@color/black" />
+
+  <TextView
+      android:id="@+id/text_arivingfrom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/text_nationality"
+      android:layout_below="@+id/radio_profession"
+      android:layout_marginTop="48dp"
+      android:text="@string/arriving_from"
+      android:textColor="@color/black" />
+
+</RelativeLayout>

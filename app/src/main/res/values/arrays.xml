@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_location">
+        <item>Please Selsect</item>
+        <item>Arrival</item>
+        <item>Departure</item>
+       
+    </string-array>
+    <string-array name="array_profession">
+         <item>Please Selsect</item>
+        <item>Business</item>
+        <item>Employeed</item>
+        <item>starred</item>
+    </string-array>
+    <string-array name="array_gender">
+         <item>Please Selsect</item>
+        <item>Male</item>
+        <item>Female</item>
+        
+    </string-array>
+    <string-array name="agegroup">
+        <item>25\-35 Years</item>
+        <item>36\-45 Years</item>
+        <item>46\-54 Years</item>
+        <item>Above 55 Year</item>
+       
+    </string-array>
+     <string-array name="aq1">
+        <item>Business</item>
+        <item>Leisure</item>
+        <item>Both</item>
+        <item>Above 55 Year</item>
+       
+    </string-array>
+    <string-array name="aq2">
+        <item>1\-2 times</item>
+        <item>3\-5 times</item>
+        <item>6\-10 times</item>
+        <item>>10 time</item>
+       
+    <!-- </string-array>
+     <string-array name="aq3 ">
+        <item>Yes</item>
+        <item>No</item>
+       
+       
+    </string-array>
+    <string-array name="aq4 ">
+        <item>Liquor</item>
+        <item>Tobacco</item>
+        <item>Perfumery</item>
+        <item>>Chocolates</item>
+       
+    </string-array>
+     <string-array name="aq5 ">
+        <item>Toiletries</item>
+        <item>Baby Products</item>
+        <item>Pharmacy,Wellness Products</item>
+        <item>House Hold items (Air fresh, washing, Dish wash)</item>
+		<item >Food (olive oils, Gourmet canned products, Milk Powder, Tin Juices)</item>	
+        
+       
+    </string-array>
+    <string-array name="aq6 ">
+        <item>1-2 times</item>
+        <item>3-5 times</item>
+        <item>6-10 times</item>
+        <item>>10 time</item>
+       
+    </string-array>
+     <string-array name="aq7 ">
+        <item>Business</item>
+        <item>Leisure</item>
+        <item>Both</item>
+        <item>Above 55 Year</item>
+       
+    </string-array>
+    <string-array name="aq8 ">
+        <item>1-2 times</item>
+        <item>3-5 times</item>
+        <item>6-10 times</item>
+        <item>>10 time</item>
+       
+    </string-array>
+     -->
+ </string-array>
+</resources>

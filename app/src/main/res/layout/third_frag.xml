@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light" >
+
+    <TextView
+        android:id="@+id/tvFragThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="StarRating"
+        android:textSize="26dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFragThird"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="S" />
+
+    <Button
+        android:id="@+id/exportexcel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar1"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="47dp"
+        android:text="Excel" />
+
+    <Button
+        android:id="@+id/exportcsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exportexcel"
+        android:layout_alignBottom="@+id/exportexcel"
+        android:layout_alignRight="@+id/ratingBar1"
+        android:text="CSV" />
+
+    <TextView
+        android:id="@+id/txtRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exportcsv"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+</RelativeLayout>
